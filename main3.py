@@ -44,7 +44,7 @@ def calcular_desconto(salario):
 
 def calcular_salario_liquido(funcionario: PessoaFuncionario):
     desconto_inss = calcular_desconto(funcionario.salario)
-    vale_transporte = funcionario.salario * 0.06 if funcionario.vale_transporte == 's' else 0
+    vale_transporte = funcionario.salario * 0.06 if funcionario.vale_transporte 
     dependentes_deduzidos = funcionario.dependentes * 189.59
 
     salario_liquido = (funcionario.salario - desconto_inss - vale_transporte + dependentes_deduzidos - funcionario.vale_refeicao)
